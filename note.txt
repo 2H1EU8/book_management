@@ -1,0 +1,19 @@
+Popular funtion
+-alert() - hiện một popup thông báo 
+-confirm() - hiện một popup cho người dùng confirm ( return về true hoặc fales ) 
+-eval() - biến chuỗi thành 1 câu lệnh trong js (ex: a = "y = 3; y++; document.write(y)" => eval(a) => 4 )
+-prompt() - hiện 1 form popup cho người dùng nhập (return về chuỗi mà người dùng đã nhập ) 
+
+
+document.location - return về địa chỉ của trang web
+split("<kí tự>") - trả về mảng, các chuỗi trước và sau kí tự
+${} == cộng chuỗi  ( bỏ text trong cặp ` ` và cộng chuỗi bằng ${}  )
+var obj = document.getElementById('id') - trả về đối tượng có id == id, obj.value để lấy giá trị trong thẻ
+var obj = document.getElementsByTagName('input') - trả về mảng đối tượng là các thẻ input, obj[i].value để lấy giá trị của các thẻ.
+var obj = document.getElementsByName('name') - trả về mảng đối tượng là các thẻ có giá trị name == name, obj[i].value để lấy giá trị của các thẻ.
+var obj = document.getElementsByClassName('class') - trả về mảng đối tượng là các thẻ có giá trị class == class, obj[i].value để lấy giá trị của các thẻ.
+
+document.getElementById("demo").innerHTML += "I have changed!"; innerHTML thay đổi giả trị của object trong thẻ HTML cụ thể ở đây là thẻ có id = demo
+ --Local Storage
+ --Json
+

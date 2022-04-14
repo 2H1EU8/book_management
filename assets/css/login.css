@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* background-color: rgb(55 79 138); */
+    background-image: url(https://assets.rawpixel.com/image_social_square/Y29sbGVjdGlvbi9jb3Zlci83MTk2YmY3ZWVlYjdmMWFhMTAzOTc2MTQzZDkwNjM0MV9jb3Zlci5qcGc.jpg?s=FJCUvz7bR5EewmLwOuy8CEDpeJtXUCt3Z2AIxA2PQDU);
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-container {
+    width: 40%;
+    height: 80vh;
+    background-color: rgb(255 255 255);
+    margin: 50px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.main-container .header {
+    height: 20%;
+    border-bottom: 1px solid rgba(98, 98, 101, 0.297);
+}
+
+.main-container .logo {
+    display: inline-block;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-container .logo img {
+    height: 60px;
+}
+
+.main-container .main-form {
+    height: 80%;
+}
+
+.main-container .main-form table {
+    border-spacing: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-container .main-form input {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.main-container .main-form input:focus {
+    box-shadow: 1px 1px 5px 2px rgba(98, 98, 101, 0.621);
+}
+
+.main-container .main-form input:focus-visible {
+    border: 1px solid white;
+}
+
+.main-container .main-form button {
+    width: 300px;
+    height: 40px;
+    background-color: rgb(98, 99, 100);
+    color: white;
+    border-radius: 10px;
+}
+
+.main-container .main-form button:hover {
+    box-shadow: 1px 1px 5px 2px rgba(98, 98, 101, 0.621);
+    background-color: white;
+    color: black;
+}
+
+.main-container .main-form a {
+    text-decoration: none;
+    color: black;
+}
+

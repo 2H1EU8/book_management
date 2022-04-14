@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css ">
+    <title>Login | BookManagement</title>
+</head>
+<body>
+    <script>
+        function checkUser() {
+            const ADMIN_USER = 'KienHahaha';
+            const ADMIN_PASSWORD = 'admin';
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (ADMIN_USER === username && ADMIN_PASSWORD === password) {
+                window.location = 'book.html';
+            }
+            else {
+                alert("WRONG USER NAME OR PASSWORD")
+            }
+        }
+    </script>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">
+                <img src="assets/img/BShook-p-logos_black.png" alt="">
+            </div>
+        </div>
+        <div class="main-form">
+            <form action="" method="get">
+                <table>
+                    <tr>
+                        <td style="font-size: x-large; font-weight: 600; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Login VKU's Lybrary</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="username" id="username" placeholder="Username" autocomplete="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="checkUser()">Login</button>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>    
+                            <a href="bonus.html">Forgot password?</a>
+                            <br>
+                            <hr style="width: 30%; margin-left: auto; margin-right: auto;">
+                            <a href="bonus.html">Sign-up</a> 
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

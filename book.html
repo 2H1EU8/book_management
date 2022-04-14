@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/book.css">
+    <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
+    <title>Book</title>
+    <script src="book.js"></script>
+</head>
+<body onload="init()" >
+    <div id="content">
+        <div id="heading">
+            <div class="logo">
+                <img src="assets/img/BShook-p-logos_white.png" alt="Logo">
+                <div class="header-content">
+                    <span> <span style="color: rgb(200 32 50);">V</span> <span style="color: rgb(247 150 30)">K</span> <span style="color: rgb(55 79 138);">U</span> 's Lybrary Management</span>
+                </div>
+            </div>
+            <div class="login">
+                <div class="label-login">
+                    <a href="#">
+                        <span style="font-size: 15px;">
+                            Admin <i class="ti-angle-down"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="logout">
+                    <div class="label-logout">
+                        <a href="index.html">
+                            Log out
+                            <i class="ti-angle-double-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="main-content">
+            <div class="side-bar">
+                <div class="sb-nav">
+                    <a href="http://vku.udn.vn/">VKU Home</a>
+                    <hr width="100%" size="1px">
+                </div>
+                <div class="sb-nav">
+                    <a href="book.html">Book Entry</a>
+                    <hr width="100%" size="1px">
+                </div>
+                <div class="sb-nav">
+                    <a href="bonus.html">...</a>
+                    <hr width="100%" size="1px">
+                </div>
+                <div class="sb-nav footer">
+                    <span>Develop by Hieunguuu &reg;</span>
+                </div>
+            </div>
+            <div class="main-form">
+                <div class="form">
+                    <table>
+                        <thead>
+                            <th colspan="4">Book List</th>
+                        </thead>
+                        <tr>
+                            <td>Book No:</td>
+                            <td>
+                                <input type="number" name="index" id="index" value="" hidden="true">
+                                <input type="text" name="book-no" id="book-no">
+                            </td>
+                            <td>Book Title:</td>
+                            <td>
+                                <input type="text" name="book-title" id="book-title">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Author:</td>
+                            <td>
+                                <input type="text" name="author" id="author"> 
+                            </td>
+                            <td>Category:</td>
+                            <td>
+                                <input type="text" name="category" id="category">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Num of pages:</td>
+                            <td>
+                                <input type="text" name="num-of-page" id="num-of-page">
+                            </td>
+                            <td>Publishing co:</td>
+                            <td>
+                                <input type="text" name="publishing" id="publishing">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <button onclick="entryBook()" style="color: white;">Entry</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <button onclick="reset()" style="background-color: rgb(55 79 138); color: white; 
+                                border: 2px solid rgb(200 32 50);">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="list-book">
+                    <table class="table-list">
+                        <thead>
+                            <tr>
+                                <th colspan="9">Book Management</th>
+                            </tr>
+                            <tr>
+                                <th>STT</th>
+                                <th>Book No</th>
+                                <th>Book Title</th>
+                                <th>Author</th>
+                                <th>Category</th>
+                                <th>Number Page</th>
+                                <th>Publisher</th>
+                                <th colspan="2" style="width: 100px;">...</th>
+                            </tr>
+                        </thead>
+                        <tbody id="result">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

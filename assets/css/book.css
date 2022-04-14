@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#heading {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(26, 148, 255);
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid rgb(55 79 138);
+}
+
+#heading .logo {
+    position: relative;
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+#heading .logo img {
+    height: 75px;
+}
+
+#heading .logo .header-content {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-weight: 600;
+}
+
+#heading .login {
+    background-color: rgba(55, 79, 138, 0.055);
+    display: inline;
+    float: right;
+    line-height: 100px;
+    width: 100px;
+}
+
+#heading .login:hover .logout{
+    display: block;
+}
+
+#heading .login .label-login {
+    text-align: center;
+}
+
+#heading .login:hover {
+    cursor: pointer;
+}
+
+#heading .login a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#heading .login .ti-angle-down {
+    font-size: 10px;
+    color: white;
+}
+
+#heading .login .logout {
+    background-color: rgb(255, 255, 255);
+    float: right;
+    width: 100px;
+    height: 50px;
+    box-shadow: 1px 1px 10px 5px rgba(98, 98, 101, 0.621);
+    border-radius: 3px;
+    display: none;
+}
+
+.login .logout .label-logout {
+    text-align: center;
+    line-height: 50px;
+}
+
+#heading .login .logout a, i {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+
+.logo .header-content span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    display: contents;
+}
+
+#main-content {
+    margin-top: 100px;
+    height: max-content;
+}
+
+#main-content .side-bar {
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    background-color:rgb(200 32 50);
+    display: inline-block;
+    border: 2px solid rgb(55 79 138) ;
+}
+
+.side-bar .sb-nav{
+    margin: 70px 25px;
+    color: white;
+    text-align: center;
+}
+
+.side-bar .sb-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.side-bar .sb-nav span {
+    font-size: 10px;
+}
+
+.side-bar .sb-nav.footer {
+    margin-bottom: 0px;
+}
+
+#main-content .main-form {
+    width: 85%;
+    height: inherit;
+    float: right;
+    background-color: white;
+}
+
+#main-content .main-form table {
+    width: -webkit-fill-available;
+    border-spacing: 20px;
+    text-align: center;
+}
+
+#main-content .main-form input {
+    width: 250px;
+}
+
+#main-content .form button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(247 150 30);
+    border: 2px solid rgb(55 79 138);
+}
+
+#main-content .main-form button:hover {
+    cursor: pointer;
+}
+
+#main-content .table-list .btn{
+    width: 44px;
+    height: 20px;
+}   
+
+.table-list {
+    border-collapse:collapse;
+}
+
+.table-list th {
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+.table-list td {
+    height: 30px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+.table-list .btn.btn-edit{
+    color: white;
+    border-radius: 10px;
+    background-color: #198a19;
+    border: 1px solid #ccc;
+}  
+
+.table-list .btn.btn-delete{
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(245, 47, 32);
+    border: 1px solid #ccc;
+}   
+
+
